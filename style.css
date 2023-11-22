@@ -453,7 +453,6 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     .Header-text {
-        margin-top: 5%;
         font-size: 16px;
     }
 
@@ -549,7 +548,4 @@ nav .fas {
     .copyright{
         font-size: 14px;
     }
-
-
-
 }
