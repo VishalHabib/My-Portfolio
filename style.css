@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* MAIN PAGE */
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-list {
+    margin-left: 400px;
+}
+
+button {
+    border: 2px solid #ff004f;
+    background-color: black;
+    border-radius: 10px;
+    color: #ff004f;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    margin: 3px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff004f;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+span {
+    color: #ff004f;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.Header-text {
+    margin: 4% 10%;
+}
+
+h2 {
+    line-height: 2cm;
+}
+
+.intro-detail {
+    margin-top: 15px;
+    line-height: 1cm;
+    font-size: large;
+}
+
+.linkedin {
+    color: #ff004f;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.linkedin:hover {
+    color: rgb(160, 4, 71);
+    text-decoration: none;
+}
+
+.intro {
+    color: white;
+    transition: 0.9s;
+}
+
+.intro:hover {
+    color: rgb(177, 183, 183);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button2 {
+    margin-top: 40px;
+}
+
+/* About */
+
+#about {
+    padding: 80px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 20px;
+    transform: none;
+    transition: 0.9s;
+    cursor: pointer;
+    opacity: 0.2;
+    border-right: 2px solid #ff004f;
+    border-bottom: 2px solid #ff004f;
+    padding: 10px 10px;
+}
+
+.about-col-1 img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    border-color: white;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    margin-top: 10px;
+    font-size: large;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 10px 0 40px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: large;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+.tab-content ul li span {
+    font-size: large;
+}
+
+.tab-content ul li a {
+    color: #fff;
+    line-height: 1cm;
+    transition: 0.5s;
+}
+
+.tab-content ul li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(160, 4, 71); 
+}
+
+.tab-content {
+    margin-top: -20px;
+    display: none;
+}
+
+.tab-content.active-content {
+    display: block;
+}
+
+.about-col-2 p a {
+    color: #ff004f;
+    transition: 0.5s;
+}
+
+.about-col-2 p a:hover {
+    color: rgb(160, 4, 71);
+    text-decoration: none;
+}
+
+/* Project */
+
+#Project {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
+    margin-top: 40px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transform: none;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.work img:hover {
+    transform: scale(1.1);
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    font-size: large;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: large;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: none;
+    transition: 0.5s;
+}
+
+.layer a:hover {
+    transform: rotate(-20deg) scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.button3 {
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 8px 15px;
+    border: 2px solid #ff004f;
+    background-color: black;
+    border-radius: 10px;
+    color: #ff004f;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3:hover {
+    background-color: #ff004f;
+    color: white;
+}
+
+/* Contact */
+
+#contact {
+    padding: 90px 0;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+
+.contact-left p a {
+    margin-top: 90px;
+    font-size: large;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin: 20px 20px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.contact-left p i:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: #ff004f;
+    background: black;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.1)
+}
+
+.btn.btn3 {
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+form {
+    margin-top: 90px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: large;
+    border-radius: 6px;
+}
+
+.copyright {
+    margin-top: 20px;
+    width: 100%;
+    background: #262626;
+    padding: 10px 0;
+    font-size: large;
+    text-align: center;
+}
+
+
+.copyright p i {
+    color: #ff004f;
+    margin: 0 5px;
+}
+
+/* css for small screen */
+
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Header-text {
+        margin-top: 50px;
+    }
+
+    .Header-text h2 {
+        font-size: 30px;
+    }
+
+    .Header-text h1 {
+        font-size: 40px;
+    }
+
+    nav h1{
+        font-size: 50px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 30px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .about-col-2 h1{
+        font-size: 50px;
+        margin-left: 10px;
+    }
+
+    .sub-title{
+        font-size: 15px;
+        line-height: 0.5cm;
+        margin-left: 10px;
+    }
+
+    .tab-titles p{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .tab-content ul li{
+        font-size: 15px;
+        line-height: 0.5cm;
+        margin-left: 5px;
+    }
+
+    .tab-content .tab-sub-contents{
+        font-size: 20px;
+    }
+
+    .tab-content ul li span{
+        font-size: 20px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+
+    .sub-title2{
+        font-size: 50px;
+    }
+
+    .contact-left h1{
+        font-size: 50px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}

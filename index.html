@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<!-- Main page -->
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>V</span>ishal.</h1>
+                <ul class="nav-list" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="Header-text">
+                <h2 class="intro">Hey there!</h2>
+                <h1 class="intro">I'm,<span>Vishal Habib.</span></h1>
+                <h1 class="intro">I love to explore & code!</h1>
+                <p class="intro-detail"> I'm on the journey to becoming a software engineer, I believe in personal
+                    growth
+                    and value
+                    the opportunity to learn alongside talented individuals, for engaging discussions
+                    feel free to reach out to me on <a class="linkedin"
+                        href="https://www.linkedin.com/in/vishal-habib-4a7074200/">@LinkedIn</a>. Looking forward to
+                    connecting!
+                </p>
+                <a href="  ">
+                    <button class="button2" type="button">HIRE ME!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="my-image" src="/images/20230608_210835.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1><span>A</span>bout <span>M</span>e:</h1>
+                    <p class="sub-title">An enthusiastic fresher who is strong in design and integration with intuitive
+                        problem-solving skills. I'm a recent graduate from <a href="https://jcethbl.edu.in/">Jain College of Engineering and
+                            Technology</a>,
+                        specialzing in Computer Science (2019-2023) with <a href="https://www.dropbox.com/scl/fi/wxta9b6mf963570u2yrlj/Marksheets.pdf?rlkey=3tmhaloguwp7gkw93yggdriz9&dl=0">
+                            8.33 GPA aggregate</a>. My interest
+                        in Web Development started back
+                        in 2022 during my 3rd year of B.E. Since then I started learning related programming languages,
+                        Frameworks and some
+                        other cool libraries.<br>
+                        My academic journey complemented by a six-month internship as a Frontend Developer at <a
+                            href="https://www.aalpha.net/">Aalpha
+                            information Systems Pvt Ltd India</a>, where I excelled in creating intuitive and
+                        user-friendly web
+                        interfeces. And
+                        This experience allowed me to apply my skills to real world projects and enchance my technical
+                        skills furthur.
+                        Now looking for an exciting opportunity to start career as an Associate Software Engineer
+                        (frontend developer) with a reputed firm driven by technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-link" onclick="opentab('Certificates')">Certificates</p>
+                    </div>
+
+                    <div class="tab-content active-content" id="skills">
+                        <ul>
+                            <li><span class="tab-sub-contents">Technical Skills</span><br><br>Python Programming, HTML5,
+                                CSS<br>
+                                Object-Oriented programming, Javascript,
+                                MySQL,<br> Database, Firebase, C++, TCP/IP,<br> API Integration, Operating Systems,
+                                SDLC.
+                            </li>
+                            <li><span class="tab-sub-contents">Soft Skills</span><br><br>Problem-Solving, Communication,
+                                Analytical Thinking,<br>
+                                Collaboration, Active Listening, Attention to detail.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span class="tab-sub-contents">Aalpha Information Systems India Pvt Ltd.<br>Frontend
+                                    Developer Intern (Mar 2022 - Sep 2022) </span><br><br>
+                                <span>Responsibilities:</span><br>
+                                Implemented and developed a
+                                Video Conferencing Web Application utiziling the technologies
+                                such as Reactjs, Firebase and Dyte.io.<br>
+                                Ensuring the robust security measures for user authentication and Enchanced
+                                user interaction with intuitive interface through redesign and development.<br>
+                                Performed designated test plans and protocols to validate assigned code sections,
+                                actively identifying, documenting and troubleshooting.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span class="tab-sub-contents">P C JABIN SCIENCE COLLEGE.<br>12TH/PUC (2017 -
+                                    2019)</span><br>
+                            <li>Subject: PCMCS</li>
+                            <li>Marks Obtained: 84.50%</li>
+                            </li>
+                            <li><span class="tab-sub-contents">Jain College of Engineering and Technology. (B.E.)<br>
+                                    (2019 - 2023)</span><br>
+                            <li>Academic Project : Developed an IOT based model to help<br> farmers
+                                to detect plant diseases using sensors, camera module<br> and prevent pesticides in
+                                real-time.</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Certificates">
+                        <ul>
+                            <li><span class="tab-sub-contents">Programming for Everybody (Getting Started with Python).</span><br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/HRWGTTBDTCX4">Certification</a>
+                            </li>
+                            <li><span class="tab-sub-contents">SQL for Data Science.</span><br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/Q2RSQYLY49AQ">Certification</a>
+                            </li>
+                            <li><span class="tab-sub-contents">Excel Skills for Business: Essentials.</span><br>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/C56MTDHP4EQV">Certification</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="Project">
+        <div class="container">
+            <h1 class="sub-title2"><span>M</span>y <span>W</span>ork:</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/crypto.jpeg">
+                    <div class="layer">
+                        <h3>Crypto Currency App</h3>
+                        <p>This application is able to search currencies and have it displayed on the browser.
+                            Also, the prices will update live whenever the page is refreshed.
+                            And cryptocurrency data is fetched from a public API.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/video conf.jpeg">
+                    <div class="layer">
+                        <h3>Video Conferencing App</h3>
+                        <p>Developed and implemented a video conferencing web system using technologies like React.js,
+                            Firebase, and dyte.io,
+                            resulting in a seamless virtual communication platform for remote teams;
+                            reduced communication barriers and improved collaboration efficiency by 50%.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/robot.jpeg">
+                    <div class="layer">
+                        <h3>IOT based Krishi : Bot Model</h3>
+                        <p>Developed an IOT based innovative robot model to help farmers to detect plant diseases and
+                            prevention
+                            system utilizing tools like sensors, camera module, ardiuno to navigate through field,
+                            capturing plants through camera module and prevent pesticides in real-time</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button3">See More </a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-sub-title"><span>C</span>ontact <span>M</span>e:</h1>
+                    <p><a href="#"><i class="fa-regular fa-envelope"></i>VishalHabib777@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i>+918904279975</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/images/mycv.pdf" download class="btn btn3">
+                        <button type="button">RESUME</button>
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactform" action="https://formspree.io/f/mbjvewqq"  method="POST">
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea type="message" name="message" placeholder="Your Message"></textarea>
+                        <button type="submit" rows="9" class="btn3" >Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright<i class="fa-regular fa-copyright"></i> Vishal, 2023.</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link")
+        var tabcontents = document.getElementsByClassName("tab-content")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-content");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-content")
+        }
+    </script>
+
+
+    <script>
+        sidemeu = document.getElementById("sidemenu");
+
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        window.onbeforeunload = () => {
+            for(const form of document.getElementsByTagName('form')){
+                form.reset();
+            }
+        }
+    </script>
+
+    
+   
+</body>
+
+</html>
