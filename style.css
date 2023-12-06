@@ -191,7 +191,7 @@ h2 {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -200,6 +200,14 @@ h2 {
 
 .tab-link.active-link::after {
     width: 50%;
+}
+
+mark {
+    border-radius: 5px;
+    background: linear-gradient(to right,#f5004e, black);
+    padding: 2px;
+    color: white;
+    display: inline-block;
 }
 
 .tab-content ul li {
@@ -246,6 +254,12 @@ h2 {
 
 #Project {
     padding: 50px 0;
+}
+
+.clickon{
+    margin-bottom:-50px; 
+    font-style: italic;
+    display: none;
 }
 
 .work-list {
@@ -521,7 +535,11 @@ nav .fas {
 
     .tab-link {
         font-size: 14px;
-        margin-right: 20px;
+        margin-right: 40px;
+    }
+
+    mark {
+        padding : 1px;
     }
 
     .tab-content ul li {
@@ -535,6 +553,14 @@ nav .fas {
 
     .sub-title2 span{
         font-size: 50px;
+    }
+
+    .clickon{
+        display: block;
+        text-align: center;
+        font-weight:50;
+        font-size: large;
+        opacity: 0.4;
     }
 
     .contact-left h1 span{
